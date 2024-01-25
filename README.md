@@ -194,8 +194,9 @@ Serial.println();
 - ![](https://github.com/AmaiCisneros/Practica-9/blob/main/5.png)
 - ![](https://github.com/AmaiCisneros/Practica-9/blob/main/6.png)
 - ![](https://github.com/AmaiCisneros/Practica-9/blob/main/7.png)
+- - ![](https://github.com/AmaiCisneros/Practica-9/blob/main/8.png)
 
 5°- Hacemos correr la programacion en WOKWI asegurandonos que se conecto de manera correcta. Finalmente el  NODE-RED y la ESP32 dentro de WOKWI arrojaran los resultados deseados
-- ![](https://github.com/AmaiCisneros/Practica-9/blob/main/8.png)
+- ![](https://github.com/AmaiCisneros/Practica-9/blob/main/9.png)
 
   
