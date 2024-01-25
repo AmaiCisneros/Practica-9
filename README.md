@@ -19,8 +19,8 @@ DHTesp dhtSensor;
 
 const char* ssid = "Wokwi-GUEST";
 const char* password = "";
-const char* mqtt_server = "18.193.219.109";
-String username_mqtt="educatronicosiot";
+const char* mqtt_server = "3.65.168.153";
+String username_mqtt="ACH13";
 String password_mqtt="12345678";
 
 WiFiClient espClient;
@@ -158,14 +158,15 @@ Serial.println();
     Serial.print("Publish message: ");
     Serial.println(output);
     Serial.println(output.c_str());
-    client.publish("AmaiTemp", output.c_str());
+    client.publish("Cisneros1", output.c_str());
   }
 }
-
 2°-Instalamos las librerias que utilizaremos
-- 
+- ![]()
+
 
 3°-Agregar el Sensor DHT22 y realizar las conexiones con la ESP22
+- ![]()
 
 
 4°-En el programa Node Red vamos a instalar  el bloque de mqtt in, posteriormente bloque json , asi mismo las function y los bloques de Chart y Gaugue Correspondientes 
@@ -173,6 +174,7 @@ Serial.println();
   -En bloque mqtt in colocamos el nombre del topico y el numero de la IP que se utilizara (esta dede de ser la misma que la que se coloco en el codigo)
   -El bloque json colocar la accion de Always convert to JavaScript Object
   -En los bloques function colocaremos estos codigos uno en cada uno ;
+   
     msg.payload = msg.payload.TEMPERATURA;
     msg.topic = "TEMPERATURA";
     return msg;
@@ -184,10 +186,16 @@ Serial.println();
     msg.payload = msg.payload.DISTANCIA;
     msg.topic = "DISTANCIA";
     return msg;
-  
+
   -En bloques de Chart y Gaugue
    Selecionar los grupos de chart en graficos y los gaugue en indicador, colocar los datos que corresponden
+- ![]()
+- ![]()
+- ![]()
+- ![]()
+- ![]()
 
 5°- Hacemos correr la programacion en WOKWI asegurandonos que se conecto de manera correcta. Finalmente el  NODE-RED y la ESP32 dentro de WOKWI arrojaran los resultados deseados
+- ![]()
 
   
